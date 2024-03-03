@@ -53,30 +53,48 @@
             You won!
         </div>
         <script type="module">
-            var itemArray
-            var nameIndex = 0
-            var rarityIndex = 1
-            var chestType = 2
-            var gameOrigin = 3
-            var stackingType = 4
-
-            var input = document.getElementById('items')
+            var itemList
+    
             fetch('Book.json')
             .then(response => response.json())
-            .then(data => itemArray = data)
+            .then(data => {itemList = data;}).then(() => {
+    console.log(itemList);
+   }).then(() => {
+    makeItemArray(itemList)
+   })
             .catch(error => console.error('Error fetching JSON:', error));
-            fillArray()
         </script>
         
 
         <script>
             var raindleAnswer
             var raindleAnswerArray
+            var itemArray = []
+            var nameIndex = 0
+            var rarityIndex = 1
+            var chestType = 2
+            var gameOrigin = 3
+            var stackingType = 4
+
+            
+            function makeItemArray(itemList){
+                for(var i = 0; i < itemList.length; i++){
+                    itemArray[i] = []
+                    itemArray[i][nameIndex] = itemList[i]["Name"]
+                    itemArray[i][rarityIndex] = itemList[i]["Rarity"]
+                    itemArray[i][chestType] = itemList[i]["Chest Type"]
+                    itemArray[i][gameOrigin] = itemList[i]["Game Origin"]
+                    itemArray[i][stackingType] = itemList[i]["Stacking Type"]
+                }
+                fillArray(itemArray);
+            }
+
             function fillArray(){
                 var itemTextField = document.getElementById("item")
                 var option
-                for(var i = 1; i<itemArray.length; i++){
+                for(var i = 0; i<itemArray.length; i++){
                     option = document.createElement("option")
+                    console.log(itemArray[i][nameIndex])
                     option.value = itemArray[i][nameIndex]
                     itemTextField.appendChild(option)
                     //console.log(option)
@@ -150,7 +168,8 @@
             }
 
             function getItemArray(answer){
-                for(var i = 1; i < itemArray.length; i++){
+                for(var i = 0; i < itemArray.length; i++){
+                    console.log(itemArray[i])
                     if(itemArray[i][nameIndex] == answer){
                         answerArray = itemArray[i]
                         break
@@ -160,7 +179,7 @@
             }
 
             function compareAnswer(){
-                console.log(answerArray)
+                console.log(answerArray[rarityIndex])
 
                 if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
                     correctQuality(answerArray[rarityIndex])
