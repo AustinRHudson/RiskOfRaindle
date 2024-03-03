@@ -58,8 +58,6 @@
             fetch('Book.json')
             .then(response => response.json())
             .then(data => {itemList = data;}).then(() => {
-    console.log(itemList);
-   }).then(() => {
     makeItemArray(itemList)
    })
             .catch(error => console.error('Error fetching JSON:', error));
@@ -94,10 +92,8 @@
                 var option
                 for(var i = 0; i<itemArray.length; i++){
                     option = document.createElement("option")
-                    console.log(itemArray[i][nameIndex])
                     option.value = itemArray[i][nameIndex]
                     itemTextField.appendChild(option)
-                    //console.log(option)
                 }
                 randomItemGenerator()
             }
@@ -105,6 +101,7 @@
             var itemGuess
             var itemGuesses = document.getElementsByClassName("item-guesses")
             var winTextHolder = document.getElementsByClassName("win-text-holder")
+            var guessedItems = []
             var inputField = document.getElementById("textField")
             $("#textField").on('keyup', function (event) {
             if (event.keyCode === 13) {
@@ -141,7 +138,8 @@
                 }
 
             function checkAnswer(answer){
-                if(answer){
+                if(guessedItems.indexOf(answer)){
+                    guessedItems.push(answer)
                 itemGuess = document.createElement("div")
                     itemGuess.className = "item-guess"
                     itemGuesses[0].appendChild(itemGuess)
@@ -169,7 +167,6 @@
 
             function getItemArray(answer){
                 for(var i = 0; i < itemArray.length; i++){
-                    console.log(itemArray[i])
                     if(itemArray[i][nameIndex] == answer){
                         answerArray = itemArray[i]
                         break
@@ -179,8 +176,6 @@
             }
 
             function compareAnswer(){
-                console.log(answerArray[rarityIndex])
-
                 if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
                     correctQuality(answerArray[rarityIndex])
                     console.log("both" + raindleAnswerArray[rarityIndex])
