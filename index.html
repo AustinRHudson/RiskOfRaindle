@@ -3,12 +3,34 @@
     <style>
         .guessing-field{
             margin:auto;
-            width: 50%;
+            width: 0%;
+        }
+        .item-guesses{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            min-height: 100px;
+            margin: auto;
+            margin-top: 5%;
+            max-width: fit-content;
         }
         .item-guess{
-            background-color: aqua;
-            
+            background-color: black;
+            min-width: 600px;
+            min-height: 120px;
         }
+        .item-quality{
+            margin: 10px;
+            background-color: red;
+            background-size:auto;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            text-align: center;
+            line-height:normal;
+        }
+
     </style>
     <head>
         <meta charset="utf-8">
@@ -25,7 +47,7 @@
             <datalist id="item"></datalist>
             
         </div>
-        <div class="item-guess">
+        <div class="item-guesses"
             
         </div>
         <script>
@@ -66,7 +88,9 @@
            randomItemGenerator()
 
         }
-           
+            var answerArray
+            var itemGuess
+            var itemGuesses = document.getElementsByClassName("item-guesses")
             var inputField = document.getElementById("textField")
             $("#textField").on('keyup', function (event) {
             if (event.keyCode === 13) {
@@ -80,15 +104,39 @@
                 raindleAnswerArray = itemArray[rng]
              }
 
+             function correctQuality(text){
+                    var itemQuality = document.createElement("div")
+                    itemQuality.className = "item-quality"
+                    itemQuality.style.backgroundColor = "green"
+                    var itemText = document.createElement("span")
+                    itemText.className = "item-text"
+                    itemText.innerHTML = text
+                    itemQuality.appendChild(itemText)
+                    itemGuess.appendChild(itemQuality)
+                }
+
             function checkAnswer(answer){
+                itemGuess = document.createElement("div")
+                    itemGuess.className = "item-guess"
+                    itemGuesses[0].appendChild(itemGuess)
+                    var itemName = document.createElement("div")
+                    itemName.className = "item-quality"
+                    itemName.style.backgroundColor = "gray"
+                    var itemText = document.createElement("span")
+                    itemText.className = "item-text"
+                    itemText.innerHTML = answer
+                    itemName.appendChild(itemText)
+                    itemGuess.appendChild(itemName)
                 if(raindleAnswer == answer){
-                    console.log("You win!")
+                    correctQuality(answerArray[rarityIndex])
+                    correctQuality(answerArray[chestType])
+                    correctQuality(answerArray[gameOrigin])
+                    correctQuality(answerArray[stackingType])
                 }else{
                     compareAnswer(answer)
                 }
-                console.log(answer)
             }
-            var answerArray
+
             function compareAnswer(answer){
                 for(var i = 1; i < itemArray.length; i++){
                     if(itemArray[i][nameIndex] == answer){
@@ -97,29 +145,48 @@
                     }
                 }
 
+                
+
+                
+                function incorrectQuality(text){
+                    var itemQuality = document.createElement("div")
+                    itemQuality.className = "item-quality"
+                    itemQuality.style.backgroundColor = "red"
+                    var itemText = document.createElement("span")
+                    itemText.className = "item-text"
+                    itemText.innerHTML = text
+                    itemQuality.appendChild(itemText)
+                    itemGuess.appendChild(itemQuality)
+                }
                 if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
+                    correctQuality(answerArray[rarityIndex])
                     console.log("both" + raindleAnswerArray[rarityIndex])
                 }else{
+                    incorrectQuality(answerArray[rarityIndex])
                     console.log("not" + answerArray[rarityIndex])
                 }
 
                 if(answerArray[chestType] == raindleAnswerArray[chestType]){
+                    correctQuality(answerArray[chestType])
                     console.log("both" + raindleAnswerArray[chestType])
                 }else{
+                    incorrectQuality(answerArray[chestType])
                     console.log("not" + answerArray[chestType])
                 }
 
                 if(answerArray[gameOrigin] == raindleAnswerArray[gameOrigin]){
-                    
+                    correctQuality(answerArray[gameOrigin])
                     console.log("both" + raindleAnswerArray[gameOrigin])
                 }else{
-                    console.log(answerArray[gameOrigin], raindleAnswerArray[gameOrigin])
+                    incorrectQuality(answerArray[gameOrigin])
                     console.log("not" + answerArray[gameOrigin])
                 }
                 
                 if(answerArray[stackingType] == raindleAnswerArray[stackingType]){
+                    correctQuality(answerArray[stackingType])
                     console.log("both " + raindleAnswerArray[stackingType])
                 }else{
+                    incorrectQuality(answerArray[stackingType])
                     console.log("not "  + answerArray[stackingType])
                 }
             }
