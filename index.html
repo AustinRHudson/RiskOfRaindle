@@ -30,16 +30,17 @@
             text-align: center;
             line-height:normal;
         }
+        .win-text-holder{
+            text-align: center;
+        }
 
     </style>
     <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./read-excel-file.min.js"></script>
-        
+        <script type="text/javascript" src="Book.json"></script>
     </head>
     <body background="backgroundImage.jpg">
-        <input type="file" id="items"/>
         <div id="result-table"></div>
         <pre id="result"></pre>
         <div class="guessing-field">
@@ -47,10 +48,11 @@
             <datalist id="item"></datalist>
             
         </div>
-        <div class="item-guesses"
-            
+        <div class="item-guesses"></div>
+        <div class="win-text-holder" style="display: none;">
+            You won!
         </div>
-        <script>
+        <script type="module">
             var itemArray
             var nameIndex = 0
             var rarityIndex = 1
@@ -59,17 +61,11 @@
             var stackingType = 4
 
             var input = document.getElementById('items')
-    
-            input.addEventListener('change', function() {
-              readXlsxFile(input.files[0], { dateFormat: 'MM/DD/YY' }).then(function(data) {
-                itemArray = data
-                fillArray()
-              }, function (error) {
-                  console.error(error)
-                  alert("Error while parsing Excel file. See console output for the error stack trace.")
-              })
-            })
-            
+            fetch('Book.json')
+            .then(response => response.json())
+            .then(data => itemArray = data)
+            .catch(error => console.error('Error fetching JSON:', error));
+            fillArray()
         </script>
         
 
@@ -78,19 +74,19 @@
             var raindleAnswerArray
             function fillArray(){
                 var itemTextField = document.getElementById("item")
-            var option
-            for(var i = 1; i<itemArray.length; i++){
-                option = document.createElement("option")
-                option.value = itemArray[i][nameIndex]
-                itemTextField.appendChild(option)
-                //console.log(option)
+                var option
+                for(var i = 1; i<itemArray.length; i++){
+                    option = document.createElement("option")
+                    option.value = itemArray[i][nameIndex]
+                    itemTextField.appendChild(option)
+                    //console.log(option)
+                }
+                randomItemGenerator()
             }
-           randomItemGenerator()
-
-        }
             var answerArray
             var itemGuess
             var itemGuesses = document.getElementsByClassName("item-guesses")
+            var winTextHolder = document.getElementsByClassName("win-text-holder")
             var inputField = document.getElementById("textField")
             $("#textField").on('keyup', function (event) {
             if (event.keyCode === 13) {
@@ -99,10 +95,21 @@
              });
 
              function randomItemGenerator(){
-                var rng = Math.floor(Math.random() * itemArray.length-1) + 1
+                var rng = Math.floor(Math.random() * itemArray.length) + 1
                 raindleAnswer = itemArray[rng][nameIndex]
                 raindleAnswerArray = itemArray[rng]
              }
+
+             function incorrectQuality(text){
+                    var itemQuality = document.createElement("div")
+                    itemQuality.className = "item-quality"
+                    itemQuality.style.backgroundColor = "red"
+                    var itemText = document.createElement("span")
+                    itemText.className = "item-text"
+                    itemText.innerHTML = text
+                    itemQuality.appendChild(itemText)
+                    itemGuess.appendChild(itemQuality)
+                }
 
              function correctQuality(text){
                     var itemQuality = document.createElement("div")
@@ -116,6 +123,7 @@
                 }
 
             function checkAnswer(answer){
+                if(answer){
                 itemGuess = document.createElement("div")
                     itemGuess.className = "item-guess"
                     itemGuesses[0].appendChild(itemGuess)
@@ -128,39 +136,36 @@
                     itemName.appendChild(itemText)
                     itemGuess.appendChild(itemName)
                 if(raindleAnswer == answer){
+                    getItemArray(answer)
                     correctQuality(answerArray[rarityIndex])
                     correctQuality(answerArray[chestType])
                     correctQuality(answerArray[gameOrigin])
                     correctQuality(answerArray[stackingType])
+                    winTextHolder[0].style.display = "block"
                 }else{
-                    compareAnswer(answer)
+                    getItemArray(answer)
+                    compareAnswer()
                 }
             }
+            }
 
-            function compareAnswer(answer){
+            function getItemArray(answer){
                 for(var i = 1; i < itemArray.length; i++){
                     if(itemArray[i][nameIndex] == answer){
                         answerArray = itemArray[i]
                         break
                     }
                 }
-
                 
+            }
 
-                
-                function incorrectQuality(text){
-                    var itemQuality = document.createElement("div")
-                    itemQuality.className = "item-quality"
-                    itemQuality.style.backgroundColor = "red"
-                    var itemText = document.createElement("span")
-                    itemText.className = "item-text"
-                    itemText.innerHTML = text
-                    itemQuality.appendChild(itemText)
-                    itemGuess.appendChild(itemQuality)
-                }
+            function compareAnswer(){
+                console.log(answerArray)
+
                 if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
                     correctQuality(answerArray[rarityIndex])
                     console.log("both" + raindleAnswerArray[rarityIndex])
+                    console.log(answerArray[rarityIndex])
                 }else{
                     incorrectQuality(answerArray[rarityIndex])
                     console.log("not" + answerArray[rarityIndex])
