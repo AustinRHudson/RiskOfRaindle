@@ -1,0 +1,128 @@
+<!DOCTYPE HTMl>
+<html>
+    <style>
+        .guessing-field{
+            margin:auto;
+            width: 50%;
+        }
+        .item-guess{
+            background-color: aqua;
+            
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./read-excel-file.min.js"></script>
+        
+    </head>
+    <body background="backgroundImage.jpg">
+        <input type="file" id="items"/>
+        <div id="result-table"></div>
+        <pre id="result"></pre>
+        <div class="guessing-field">
+            <input id="textField" type="text" list="item" placeholder="Item name">
+            <datalist id="item"></datalist>
+            
+        </div>
+        <div class="item-guess">
+            
+        </div>
+        <script>
+            var itemArray
+            var nameIndex = 0
+            var rarityIndex = 1
+            var chestType = 2
+            var gameOrigin = 3
+            var stackingType = 4
+
+            var input = document.getElementById('items')
+    
+            input.addEventListener('change', function() {
+              readXlsxFile(input.files[0], { dateFormat: 'MM/DD/YY' }).then(function(data) {
+                itemArray = data
+                fillArray()
+              }, function (error) {
+                  console.error(error)
+                  alert("Error while parsing Excel file. See console output for the error stack trace.")
+              })
+            })
+            
+        </script>
+        
+
+        <script>
+            var raindleAnswer
+            var raindleAnswerArray
+            function fillArray(){
+                var itemTextField = document.getElementById("item")
+            var option
+            for(var i = 1; i<itemArray.length; i++){
+                option = document.createElement("option")
+                option.value = itemArray[i][nameIndex]
+                itemTextField.appendChild(option)
+                //console.log(option)
+            }
+           randomItemGenerator()
+
+        }
+           
+            var inputField = document.getElementById("textField")
+            $("#textField").on('keyup', function (event) {
+            if (event.keyCode === 13) {
+                 checkAnswer(inputField.value);
+                }
+             });
+
+             function randomItemGenerator(){
+                var rng = Math.floor(Math.random() * itemArray.length-1) + 1
+                raindleAnswer = itemArray[rng][nameIndex]
+                raindleAnswerArray = itemArray[rng]
+             }
+
+            function checkAnswer(answer){
+                if(raindleAnswer == answer){
+                    console.log("You win!")
+                }else{
+                    compareAnswer(answer)
+                }
+                console.log(answer)
+            }
+            var answerArray
+            function compareAnswer(answer){
+                for(var i = 1; i < itemArray.length; i++){
+                    if(itemArray[i][nameIndex] == answer){
+                        answerArray = itemArray[i]
+                        break
+                    }
+                }
+
+                if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
+                    console.log("both" + raindleAnswerArray[rarityIndex])
+                }else{
+                    console.log("not" + answerArray[rarityIndex])
+                }
+
+                if(answerArray[chestType] == raindleAnswerArray[chestType]){
+                    console.log("both" + raindleAnswerArray[chestType])
+                }else{
+                    console.log("not" + answerArray[chestType])
+                }
+
+                if(answerArray[gameOrigin] == raindleAnswerArray[gameOrigin]){
+                    
+                    console.log("both" + raindleAnswerArray[gameOrigin])
+                }else{
+                    console.log(answerArray[gameOrigin], raindleAnswerArray[gameOrigin])
+                    console.log("not" + answerArray[gameOrigin])
+                }
+                
+                if(answerArray[stackingType] == raindleAnswerArray[stackingType]){
+                    console.log("both " + raindleAnswerArray[stackingType])
+                }else{
+                    console.log("not "  + answerArray[stackingType])
+                }
+            }
+        </script>
+    </body>
+</html>
