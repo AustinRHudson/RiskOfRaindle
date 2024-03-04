@@ -58,13 +58,17 @@
         </div>
         <script type="module">
             var itemList
-    
+            loadItems()
+            
+            function loadItems(){
             fetch('Book.json')
             .then(response => response.json())
             .then(data => {itemList = data;}).then(() => {
-    makeItemArray(itemList)
-   })
-            .catch(error => console.error('Error fetching JSON:', error));
+                makeItemArray(itemList)
+            })
+            .catch(error => loadItems());
+            }
+            
         </script>
         
 
