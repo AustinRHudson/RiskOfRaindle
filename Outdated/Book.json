@@ -1,65 +1,83 @@
 [
  {
-  "Name": "Armor-Piercing Rounds",
-  "Rarity": "Common",
-  "Chest Type": "Damage",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Linear"
- },
- {
-  "Name": "Backup Magazine",
-  "Rarity": "Common",
-  "Chest Type": "Utility",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Linear"
- },
- {
-  "Name": "Bison Steak",
-  "Rarity": "Common",
-  "Chest Type": "Healing",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Linear"
- },
- {
-  "Name": "AtG Missile Mk. 1",
-  "Rarity": "Uncommon",
-  "Chest Type": "Damage",
-  "Game Origin": "Risk of Rain 1",
-  "Stacking Type": "Linear"
- },
- {
-  "Name": "Old Guillotine",
-  "Rarity": "Uncommon",
-  "Chest Type": "Damage",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Hyperbolic"
- },
- {
-  "Name": "Old War Stealthkit",
-  "Rarity": "Uncommon",
-  "Chest Type": "Utility",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Exponential"
- },
- {
   "Name": "57 Leaf Clover",
   "Rarity": "Legendary",
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Linear"
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier": "Luck-Proc"
  },
  {
   "Name": "Alien Head",
   "Rarity": "Legendary",
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 1",
-  "Stacking Type": "Exponential"
+  "Stacking Type": "Exponential",
+  "Unlock Type": "Always",
+  "Modifier": "Skill Modifier-Cooldown"
+ },
+ {
+  "Name": "Armor-Piercing Rounds",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier": "Damage-Teleporter Event"
+ },
+ {
+  "Name": "AtG Missile Mk. 1",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Always",
+  "Modifier": "Damage-Proc"
+ },
+ {
+  "Name": "Backup Magazine",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier": "Skill Modifier"
+ },
+ {
+  "Name": "Bison Steak",
+  "Rarity": "Common",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Always",
+  "Modifier": "Health"
  },
  {
   "Name": "Bottled Chaos",
   "Rarity": "Legendary",
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "Linear"
+  "Stacking Type": "Linear",
+  "Unlock Type": "Always",
+  "Modifier": "Equipment"
+ },
+ {
+  "Name": "Old Guillotine",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Hyperbolic",
+  "Unlock Type": "Achievement",
+  "Modifier": "Elite-Damage"
+ },
+ {
+  "Name": "Old War Stealthkit",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential",
+  "Unlock Type": "Always",
+  "Modifier": "Movement Speed"
  }
 ]

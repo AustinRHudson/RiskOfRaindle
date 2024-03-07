@@ -9,8 +9,17 @@
             width: 0%;
             text-align: center;
         }
+        .header{
+            margin: 10px;
+            background-size:auto;
+            vertical-align: middle;
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height:normal;
+        }
         .item-guesses{
-            background-color: aqua;
             display: flex;
             flex-direction: column;
             min-height: 100px;
@@ -21,7 +30,7 @@
         .item-guess{
             background-color: rgb(109, 152, 233);
             min-width: 600px;
-            min-height: 120px;
+            min-height: 20px;
         }
         .item-quality{
             margin: 10px;
@@ -50,9 +59,18 @@
         <div class="guessing-field">
             <input id="textField" type="text" list="item" placeholder="Item name">
             <datalist id="item"></datalist>
-            
         </div>
-        <div class="item-guesses"></div>
+        <div class="item-guesses">
+            <div class="item-guess">
+                <div class="header">Name</div>
+                <div class="header">Rarity</div>
+                <div class="header">Chest Type</div>
+                <div class="header">Game Origin</div>
+                <div class="header">Stacking Type</div>
+                <div class="header">Unlock Type</div>
+                <div class="header">Modifers</div>
+            </div>
+        </div>
         <div class="win-text-holder" style="display: none;">
             You won!
         </div>
@@ -76,12 +94,19 @@
             var won = false
             var raindleAnswer
             var raindleAnswerArray
+            var matches
+            var totalMatches
+            var modifierText
+            var modifierAmount
+            var answerModifierAmount
             var itemArray = []
             var nameIndex = 0
             var rarityIndex = 1
             var chestType = 2
             var gameOrigin = 3
             var stackingType = 4
+            var unlockType = 5
+            var modifierType = 6
 
             
             function makeItemArray(itemList){
@@ -92,6 +117,8 @@
                     itemArray[i][chestType] = itemList[i]["Chest Type"]
                     itemArray[i][gameOrigin] = itemList[i]["Game Origin"]
                     itemArray[i][stackingType] = itemList[i]["Stacking Type"]
+                    itemArray[i][unlockType] = itemList[i]["Unlock Type"]
+                    itemArray[i][modifierType] = itemList[i]["Modifier Type"]
                 }
                 fillArray(itemArray);
             }
@@ -122,6 +149,7 @@
                 var rng = Math.floor(Math.random() * itemArray.length) + 1
                 raindleAnswer = itemArray[rng][nameIndex]
                 raindleAnswerArray = itemArray[rng]
+                console.log(raindleAnswerArray)
              }
 
              function incorrectQuality(text){
@@ -146,6 +174,17 @@
                     itemGuess.appendChild(itemQuality)
                 }
 
+            function slightQuality(text){
+                var itemQuality = document.createElement("div")
+                    itemQuality.className = "item-quality"
+                    itemQuality.style.backgroundColor = "yellow"
+                    var itemText = document.createElement("span")
+                    itemText.className = "item-text"
+                    itemText.innerHTML = text
+                    itemQuality.appendChild(itemText)
+                    itemGuess.appendChild(itemQuality)
+            }
+
             function checkAnswer(answer){
                     console.log(won)
                     if(getItemArray(answer) && !(won)){
@@ -154,7 +193,14 @@
                     inputField.value = ""
                     itemGuess = document.createElement("div")
                     itemGuess.className = "item-guess"
-                    itemGuesses[0].appendChild(itemGuess)
+                    
+                    if(itemGuesses.childNodes){
+                        console.log(itemGuesses.childNodes[0])
+                        itemGuesses.insertBefore(itemGuess, itemGuesses.childNodes[0])
+                    }else{
+                        itemGuesses[0].appendChild(itemGuess)
+                    }
+                    
                     var itemName = document.createElement("div")
                     itemName.className = "item-quality"
                     itemName.style.backgroundColor = "gray"
@@ -170,6 +216,8 @@
                     correctQuality(answerArray[chestType])
                     correctQuality(answerArray[gameOrigin])
                     correctQuality(answerArray[stackingType])
+                    correctQuality(answerArray[unlockType])
+                    correctQuality(answerArray[modifierType])
                     winTextHolder[0].style.display = "block"
                 }else{
 
@@ -205,39 +253,75 @@
                 return false
             }
 
+            function compareQuality(compareType){
+               console.log(answerArray, answerArray[modifierType])
+               var answerModifiers = answerArray[compareType].split(", ")
+               var raindleModifiers = raindleAnswerArray[compareType].split(", ")
+               matches = 0
+               totalMatches = raindleModifiers.length
+               modifierAmount = answerModifiers.length
+               answerModifierAmount = raindleModifiers.length
+               var i
+               var x
+                for(i = 0; i < answerModifiers.length; i++){
+                    for(x = 0; x < raindleModifiers.length; x++){
+                        if(answerModifiers[i] == raindleModifiers[x]){
+                            matches += 1
+                            raindleModifiers.splice(x, 1)
+                            break
+                        }
+                    }
+                }
+
+                console.log(matches + "/" + totalMatches)
+            }
+
             function compareAnswer(){
                 if(answerArray[rarityIndex] == raindleAnswerArray[rarityIndex]){
                     correctQuality(answerArray[rarityIndex])
-                    console.log("both" + raindleAnswerArray[rarityIndex])
-                    console.log(answerArray[rarityIndex])
                 }else{
                     incorrectQuality(answerArray[rarityIndex])
-                    console.log("not" + answerArray[rarityIndex])
                 }
 
-                if(answerArray[chestType] == raindleAnswerArray[chestType]){
+                compareQuality(chestType)
+                if(matches == totalMatches && !(modifierAmount > answerModifierAmount)){
                     correctQuality(answerArray[chestType])
-                    console.log("both" + raindleAnswerArray[chestType])
-                }else{
+                }
+                else if(matches == 0){
                     incorrectQuality(answerArray[chestType])
-                    console.log("not" + answerArray[chestType])
+                }else{
+                    slightQuality(answerArray[chestType])
                 }
 
                 if(answerArray[gameOrigin] == raindleAnswerArray[gameOrigin]){
                     correctQuality(answerArray[gameOrigin])
-                    console.log("both" + raindleAnswerArray[gameOrigin])
                 }else{
                     incorrectQuality(answerArray[gameOrigin])
-                    console.log("not" + answerArray[gameOrigin])
+                }
+                compareQuality(stackingType)
+                if(matches == totalMatches && !(modifierAmount > answerModifierAmount)){
+                    correctQuality(answerArray[stackingType])
+                }
+                else if(matches == 0){
+                    incorrectQuality(answerArray[stackingType])
+                }else{
+                    slightQuality(answerArray[stackingType])
+                }
+
+                if(answerArray[unlockType] == raindleAnswerArray[unlockType]){
+                    correctQuality(answerArray[unlockType])
+                }else{
+                    incorrectQuality(answerArray[unlockType])
+                }
+                compareQuality(modifierType)
+                if(matches == totalMatches && !(modifierAmount > answerModifierAmount)){
+                    correctQuality(answerArray[modifierType])
+                }else if(matches == 0){
+                    incorrectQuality(answerArray[modifierType])
+                }else{
+                    slightQuality(answerArray[modifierType])
                 }
                 
-                if(answerArray[stackingType] == raindleAnswerArray[stackingType]){
-                    correctQuality(answerArray[stackingType])
-                    console.log("both " + raindleAnswerArray[stackingType])
-                }else{
-                    incorrectQuality(answerArray[stackingType])
-                    console.log("not "  + answerArray[stackingType])
-                }
             }
         </script>
     </body>
