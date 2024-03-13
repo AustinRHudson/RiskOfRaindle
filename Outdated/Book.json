@@ -6,7 +6,16 @@
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
   "Unlock Type": "Achievement",
-  "Modifier": "Luck-Proc"
+  "Modifier Type": "Luck, Proc"
+ },
+ {
+  "Name": "Aegis",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility, Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Shield, Healing"
  },
  {
   "Name": "Alien Head",
@@ -14,8 +23,8 @@
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 1",
   "Stacking Type": "Exponential",
-  "Unlock Type": "Always",
-  "Modifier": "Skill Modifier-Cooldown"
+  "Unlock Type": "None",
+  "Modifier Type": "Skill Modifier, Cooldown"
  },
  {
   "Name": "Armor-Piercing Rounds",
@@ -24,7 +33,16 @@
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
   "Unlock Type": "Achievement",
-  "Modifier": "Damage-Teleporter Event"
+  "Modifier Type": "Damage, Teleporter Event"
+ },
+ {
+  "Name": "Artifact Key",
+  "Rarity": "Boss",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Key"
  },
  {
   "Name": "AtG Missile Mk. 1",
@@ -32,8 +50,8 @@
   "Chest Type": "Damage",
   "Game Origin": "Risk of Rain 1",
   "Stacking Type": "Linear",
-  "Unlock Type": "Always",
-  "Modifier": "Damage-Proc"
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Proc"
  },
  {
   "Name": "Backup Magazine",
@@ -42,7 +60,52 @@
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
   "Unlock Type": "Achievement",
-  "Modifier": "Skill Modifier"
+  "Modifier Type": "Skill Modifier"
+ },
+ {
+  "Name": "Bandolier",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Special",
+  "Unlock Type": "None",
+  "Modifier Type": "Cooldown, Proc, On Kill Effect"
+ },
+ {
+  "Name": "Beads of Fealty",
+  "Rarity": "Lunar",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Achievement Related"
+ },
+ {
+  "Name": "Ben's Raincoat",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility, Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, None",
+  "Unlock Type": "None",
+  "Modifier Type": "Shield, Debuff Modifier"
+ },
+ {
+  "Name": "Benthic Bloom",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Item Modifier, On Stage Begin Effect"
+ },
+ {
+  "Name": "Berzerker's Pauldron",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Attack Speed, Movement Speed"
  },
  {
   "Name": "Bison Steak",
@@ -50,8 +113,17 @@
   "Chest Type": "Healing",
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
-  "Unlock Type": "Always",
-  "Modifier": "Health"
+  "Unlock Type": "None",
+  "Modifier Type": "Health"
+ },
+ {
+  "Name": "Blast Shower",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Debuff Modifier"
  },
  {
   "Name": "Bottled Chaos",
@@ -59,8 +131,782 @@
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
-  "Unlock Type": "Always",
-  "Modifier": "Equipment"
+  "Unlock Type": "None",
+  "Modifier Type": "Equipment Modifier"
+ },
+ {
+  "Name": "Brainstalks",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Cooldown, On Kill Effect"
+ },
+ {
+  "Name": "Brilliant Behemoth",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Explosion"
+ },
+ {
+  "Name": "Brittle Crown",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Gold, On Damage Effect"
+ },
+ {
+  "Name": "Bundle of Fireworks",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Explosion, On Interact Effect"
+ },
+ {
+  "Name": "Bustling Fungus",
+  "Rarity": "Common",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Cautious Slug",
+  "Rarity": "Common",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, Out Of Combat"
+ },
+ {
+  "Name": "Ceremonial Dagger",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, On Kill Effect, Proc"
+ },
+ {
+  "Name": "Charged Perforator",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Proc"
+ },
+ {
+  "Name": "Chronobauble",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Slow"
+ },
+ {
+  "Name": "Corpsebloom",
+  "Rarity": "Lunar",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Crowbar",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Death Mark",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Debuff Modifier, Damage"
+ },
+ {
+  "Name": "Defense Nucleus",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner, On Kill Effect, Elite"
+ },
+ {
+  "Name": "Defensive Microbots",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Projecticle Negation"
+ },
+ {
+  "Name": "Defiant Gouge",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Enemy Spawner"
+ },
+ {
+  "Name": "Delicate Watch",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Consumable"
+ },
+ {
+  "Name": "Dio's Best Friend",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Healing, Revive, Consumable"
+ },
+ {
+  "Name": "Disposable Missile Launcher",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Explosion"
+ },
+ {
+  "Name": "Eccentric Vase",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Movement"
+ },
+ {
+  "Name": "Effigy of Grief",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Slow, Armor Modifier"
+ },
+ {
+  "Name": "Egocentrism",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Item Modifier"
+ },
+ {
+  "Name": "Empathy Cores",
+  "Rarity": "Boss",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "Encrusted Key",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "On Stage Begin Effect, Key, Chest"
+ },
+ {
+  "Name": "Energy Drink",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Movement Speed"
+ },
+ {
+  "Name": "Essence of Heresy",
+  "Rarity": "Lunar",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Skill Modifier, Heretic"
+ },
+ {
+  "Name": "Eulogy Zero",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Item Modifier"
+ },
+ {
+  "Name": "Executive Card",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Gold"
+ },
+ {
+  "Name": "Focus Crystal",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Focused Convergence",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Reciprocal",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Teleporter Event"
+ },
+ {
+  "Name": "Foreign Fruit",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Forgive Me Please",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "On Kill Effect"
+ },
+ {
+  "Name": "Frost Relic",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Slow"
+ },
+ {
+  "Name": "Fuel Array",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Achievement Related, Self Damage"
+ },
+ {
+  "Name": "Fuel Cell",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Exponential",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Equipment Modifier, Cooldown"
+ },
+ {
+  "Name": "Gasoline",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, On Kill Effect, Ignite"
+ },
+ {
+  "Name": "Genesis Loop",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "On Low Health Effect, Damage"
+ },
+ {
+  "Name": "Gesture of the Drowned",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Equipment Modifier, Cooldown"
+ },
+ {
+  "Name": "Ghor's Tome",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Gold, On Kill Effect"
+ },
+ {
+  "Name": "Glowing Meteorite",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Self Damage"
+ },
+ {
+  "Name": "Gnarled Woodsprite",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Goobo Jr.",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "Gorag's Opus",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Attack Speed, Movement Speed"
+ },
+ {
+  "Name": "H3AD-5T v2",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Jump Modifier, Damage"
+ },
+ {
+  "Name": "Halcyon Seed",
+  "Rarity": "Boss",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "Happiest Mask",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner, On Kill Effect"
+ },
+ {
+  "Name": "Hardlight Afterburner",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Skill Modifier, Cooldown"
+ },
+ {
+  "Name": "Harvester's Scythe",
+  "Rarity": "Uncommon",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear, None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Crtical Strike, Healing"
+ },
+ {
+  "Name": "Helfire Tincture",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Self Damage, Ignite"
+ },
+ {
+  "Name": "Her Biting Embrace",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Slow"
+ },
+ {
+  "Name": "His Reassurance",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Healing"
+ },
+ {
+  "Name": "Hooks of Heresy",
+  "Rarity": "Lunar",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Skill Modifier, Heretic"
+ },
+ {
+  "Name": "Hopoo Feather",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Jump Modifier"
+ },
+ {
+  "Name": "Hunter's Harpoon",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Movement Speed, On Kill Effect"
+ },
+ {
+  "Name": "Ifrit's Distinction",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Ignite"
+ },
+ {
+  "Name": "Ignition Tank",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Ignite"
+ },
+ {
+  "Name": "Infusion",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility, Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Health, On Kill Effect"
+ },
+ {
+  "Name": "Interstellar Desk Plant",
+  "Rarity": "Legendary",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "On Kill Effect, Healing"
+ },
+ {
+  "Name": "Irradiant Pearl",
+  "Rarity": "Boss",
+  "Chest Type": "Utility, Healing, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Health, Healing, Movement Speed, Damage, Attack Speed, Critical Strike, Armor Modifier"
+ },
+ {
+  "Name": "Item Scrap, Green",
+  "Rarity": "Uncommon",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Scrap, Item Modifier"
+ },
+ {
+  "Name": "Item Scrap, Red",
+  "Rarity": "Legendary",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Scrap, Item Modifier"
+ },
+ {
+  "Name": "Item Scrap, White",
+  "Rarity": "Common",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Scrap, Item Modifier"
+ },
+ {
+  "Name": "Item Scrap, Yellow",
+  "Rarity": "Boss",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Scrap, Item Modifier"
+ },
+ {
+  "Name": "Jade Elephant",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Armor Modifier"
+ },
+ {
+  "Name": "Kjaro's Band",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Proc"
+ },
+ {
+  "Name": "Laser Scope",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Critical Strike, Damage"
+ },
+ {
+  "Name": "Leeching Seed",
+  "Rarity": "Uncommon",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Lens-Maker's Glasses",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Critical Strike"
+ },
+ {
+  "Name": "Lepton Daisy",
+  "Rarity": "Uncommon",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, Teleporter Event"
+ },
+ {
+  "Name": "Light Flux Pauldron",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential, Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Skill Modifier, Cooldown, Attack Speed"
+ },
+ {
+  "Name": "Little Disciple",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Lost Seer's Lenses",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Crtical Strike, Proc"
+ },
+ {
+  "Name": "Lysate Cell",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Equipment Modifier, Cooldown, Skill Modifier"
+ },
+ {
+  "Name": "Medkit",
+  "Rarity": "Common",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Healing, On Damage Effect"
+ },
+ {
+  "Name": "Mercurial Rachis",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Zone"
+ },
+ {
+  "Name": "Milky Chrysalis",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Flight"
+ },
+ {
+  "Name": "Mired Urn",
+  "Rarity": "Boss",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, Damage"
+ },
+ {
+  "Name": "Mocha",
+  "Rarity": "Common",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Attack Speed, Movement Speed"
+ },
+ {
+  "Name": "Molotov (6-Pack)",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Ignite"
+ },
+ {
+  "Name": "Molten Perforator",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Ignite, Proc"
+ },
+ {
+  "Name": "Monster Tooth",
+  "Rarity": "Common",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "On Kill Effect, Healing"
+ },
+ {
+  "Name": "Needletick",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Proc"
+ },
+ {
+  "Name": "Newly Hatched Zoea",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "N'kuhana's Opinion",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Healing"
+ },
+ {
+  "Name": "N'kuhana's Retort",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Healing"
+ },
+ {
+  "Name": "Ocular HUD",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Critical Strike"
+ },
+ {
+  "Name": "Oddly-shaped Opal",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage Reduction"
  },
  {
   "Name": "Old Guillotine",
@@ -69,7 +915,7 @@
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Hyperbolic",
   "Unlock Type": "Achievement",
-  "Modifier": "Elite-Damage"
+  "Modifier Type": "Elite, Damage"
  },
  {
   "Name": "Old War Stealthkit",
@@ -77,7 +923,655 @@
   "Chest Type": "Utility",
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Exponential",
-  "Unlock Type": "Always",
-  "Modifier": "Movement Speed"
+  "Unlock Type": "None",
+  "Modifier Type": "Movement Speed"
+ },
+ {
+  "Name": "Paul's Goat Hoof",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Movement Speed"
+ },
+ {
+  "Name": "Pearl",
+  "Rarity": "Boss",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Health"
+ },
+ {
+  "Name": "Personal Shield Generator",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Shield, Health"
+ },
+ {
+  "Name": "Planula",
+  "Rarity": "Boss",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Plasma Shrimp",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Shield, Damage, Proc"
+ },
+ {
+  "Name": "Pluripotent Larva",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, Revive, Consumable"
+ },
+ {
+  "Name": "Pocket I.C.B.M.",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Explosion"
+ },
+ {
+  "Name": "Polylute",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Proc, Damage"
+ },
+ {
+  "Name": "Power Elixir",
+  "Rarity": "Common",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, Consumable"
+ },
+ {
+  "Name": "Predatory Instincts",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear, None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Critical Strike, Attack Speed"
+ },
+ {
+  "Name": "Preon Accumulator",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Explosion"
+ },
+ {
+  "Name": "Primordial Cube",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Pull In Effect"
+ },
+ {
+  "Name": "Purity",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Skill Modifier, Cooldown, Luck"
+ },
+ {
+  "Name": "Queen's Gland",
+  "Rarity": "Boss",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "Radar Scanner",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Information"
+ },
+ {
+  "Name": "Razorwire",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Recycler",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Item Modifier"
+ },
+ {
+  "Name": "Red Whip",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Movement Speed, Out Of Combat Effect"
+ },
+ {
+  "Name": "Regenerating Scrap",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Scrap, Item Modifier"
+ },
+ {
+  "Name": "Rejuvenation Rack",
+  "Rarity": "Legendary",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Remote Caffeinator",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing, On Interact Effect"
+ },
+ {
+  "Name": "Repulsion Armor Plate",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage Reduction"
+ },
+ {
+  "Name": "Resonance Disc",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, On Kill Effect"
+ },
+ {
+  "Name": "Roll of Pennies",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Gold, On Damage Effect"
+ },
+ {
+  "Name": "Rose Buckler",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Sprint Modifier, Armor Modifier"
+ },
+ {
+  "Name": "Royal Capacitor",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Runald's Band",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Proc"
+ },
+ {
+  "Name": "Rusted Key",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "On Stage Begin Effect, Item Modifier"
+ },
+ {
+  "Name": "Safer Spaces",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage Reduction"
+ },
+ {
+  "Name": "Sawmerang",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Sentient Meat Hook",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Hyperbolic, Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Proc"
+ },
+ {
+  "Name": "Shaped Glass",
+  "Rarity": "Lunar",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Exponential",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage"
+ },
+ {
+  "Name": "Shared Design",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Movement Speed, Health, Shield"
+ },
+ {
+  "Name": "Shattering Justice",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "On Hit Effect, Armor Modifier"
+ },
+ {
+  "Name": "Shatterspleen",
+  "Rarity": "Boss",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, None",
+  "Unlock Type": "None",
+  "Modifier Type": "Critical Strike, Bleed, Explosion, Damage"
+ },
+ {
+  "Name": "Shipping Request Form",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Special",
+  "Unlock Type": "None",
+  "Modifier Type": "On Stage Begin Effect, Item Modifier"
+ },
+ {
+  "Name": "Shuriken",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Skill Modifier"
+ },
+ {
+  "Name": "Silence Between Two Strikes",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Shield, Explosion"
+ },
+ {
+  "Name": "Singularity Band",
+  "Rarity": "Void",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Pull In Effect, Proc, Damage"
+ },
+ {
+  "Name": "Soldier's Syringe",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Attack Speed"
+ },
+ {
+  "Name": "Soulbound Catalyst",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "On Kill Effect, Equipment Modifier, Cooldown"
+ },
+ {
+  "Name": "Spare Drone Parts",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "Spectral Circlet",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite, Slow"
+ },
+ {
+  "Name": "Spinel Tonic",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Attack Speed, Armor Modifier, Health, Healing, Movement Speed, Debuff Modifier"
+ },
+ {
+  "Name": "Squid Polyp",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Ally Spawner, On Interact Effect"
+ },
+ {
+  "Name": "Sticky Bomb",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Proc, Explosion"
+ },
+ {
+  "Name": "Stone Flux Pauldron",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear, Reciprocal",
+  "Unlock Type": "None",
+  "Modifier Type": "Health, Movement Speed"
+ },
+ {
+  "Name": "Strides of Heresy",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Skill Modifier, Movement Speed, Healing, Heretic"
+ },
+ {
+  "Name": "Stun Grenade",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Hyperbolic",
+  "Unlock Type": "None",
+  "Modifier Type": "Proc, Stun, Debuff Modifier"
+ },
+ {
+  "Name": "Super Massive Leech",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Healing"
+ },
+ {
+  "Name": "Symbiotic Scorpion",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "On Hit Effect, Armor Modifier"
+ },
+ {
+  "Name": "Tentabauble",
+  "Rarity": "Void",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Hyperbolic, Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Proc, Root, Debuff Modifier"
+ },
+ {
+  "Name": "The Back-up",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Ally Spawner"
+ },
+ {
+  "Name": "The Crowdfunder",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Gold, Damage"
+ },
+ {
+  "Name": "Titanic Knurl",
+  "Rarity": "Boss",
+  "Chest Type": "Utility, Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Health, Healing"
+ },
+ {
+  "Name": "Topaz Brooch",
+  "Rarity": "Common",
+  "Chest Type": "Utility, Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Shield, On Kill Effect"
+ },
+ {
+  "Name": "Tougher Times",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Hyperbolic",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage Reduction"
+ },
+ {
+  "Name": "Transcendence",
+  "Rarity": "Lunar",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Health, Shield"
+ },
+ {
+  "Name": "Tri-Tip Dagger",
+  "Rarity": "Common",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Proc, Bleed"
+ },
+ {
+  "Name": "Trophy Hunter's Tricorn",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Item Spawn"
+ },
+ {
+  "Name": "Trophy Hunter's Tricorn (Consumed)",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Ahoy"
+ },
+ {
+  "Name": "Ukulele",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Proc, Damage"
+ },
+ {
+  "Name": "Unstable Tesla Coil",
+  "Rarity": "Legendary",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Damage, Close Range"
+ },
+ {
+  "Name": "Visions of Heresy",
+  "Rarity": "Lunar",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Skill Modifier, Damage, Heretic"
+ },
+ {
+  "Name": "Voidsent Flame",
+  "Rarity": "Void",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, On Hit Effect"
+ },
+ {
+  "Name": "Volcanic Egg",
+  "Rarity": "Equipment",
+  "Chest Type": "None",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "None",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, Flight"
+ },
+ {
+  "Name": "Wake of Vultures",
+  "Rarity": "Legendary",
+  "Chest Type": "Utility, Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Elite"
+ },
+ {
+  "Name": "War Horn",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Equipment Modifier, Attack Speed"
+ },
+ {
+  "Name": "Warbanner",
+  "Rarity": "Common",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Attack Speed, Movement Speed, Teleporter Event"
+ },
+ {
+  "Name": "Wax Quail",
+  "Rarity": "Uncommon",
+  "Chest Type": "Utility",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "Achievement",
+  "Modifier Type": "Jump Modifier"
+ },
+ {
+  "Name": "Weeping Fungus",
+  "Rarity": "Void",
+  "Chest Type": "Healing",
+  "Game Origin": "Risk of Rain 2",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Sprint Modifier, Healing"
+ },
+ {
+  "Name": "Will-o'-the-wisp",
+  "Rarity": "Uncommon",
+  "Chest Type": "Damage",
+  "Game Origin": "Risk of Rain 1",
+  "Stacking Type": "Linear",
+  "Unlock Type": "None",
+  "Modifier Type": "Damage, On Kill Effect"
  }
 ]

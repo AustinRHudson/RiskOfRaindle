@@ -173,7 +173,7 @@
  {
   "Name": "Bustling Fungus",
   "Rarity": "Common",
-  "Chest Type": "None",
+  "Chest Type": "Healing",
   "Game Origin": "Risk of Rain 1",
   "Stacking Type": "Linear",
   "Unlock Type": "None",
@@ -182,7 +182,7 @@
  {
   "Name": "Cautious Slug",
   "Rarity": "Common",
-  "Chest Type": "None",
+  "Chest Type": "Healing",
   "Game Origin": "Risk of Rain 2",
   "Stacking Type": "Linear",
   "Unlock Type": "None",
@@ -655,42 +655,6 @@
   "Stacking Type": "Linear",
   "Unlock Type": "None",
   "Modifier Type": "Health, Healing, Movement Speed, Damage, Attack Speed, Critical Strike, Armor Modifier"
- },
- {
-  "Name": "Item Scrap, Green",
-  "Rarity": "Uncommon",
-  "Chest Type": "None",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "None",
-  "Unlock Type": "None",
-  "Modifier Type": "Scrap, Item Modifier"
- },
- {
-  "Name": "Item Scrap, Red",
-  "Rarity": "Legendary",
-  "Chest Type": "None",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "None",
-  "Unlock Type": "None",
-  "Modifier Type": "Scrap, Item Modifier"
- },
- {
-  "Name": "Item Scrap, White",
-  "Rarity": "Common",
-  "Chest Type": "None",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "None",
-  "Unlock Type": "None",
-  "Modifier Type": "Scrap, Item Modifier"
- },
- {
-  "Name": "Item Scrap, Yellow",
-  "Rarity": "Boss",
-  "Chest Type": "None",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "None",
-  "Unlock Type": "None",
-  "Modifier Type": "Scrap, Item Modifier"
  },
  {
   "Name": "Jade Elephant",
@@ -1465,15 +1429,6 @@
   "Stacking Type": "None",
   "Unlock Type": "None",
   "Modifier Type": "Damage, Item Spawn"
- },
- {
-  "Name": "Trophy Hunter's Tricorn (Consumed)",
-  "Rarity": "Equipment",
-  "Chest Type": "None",
-  "Game Origin": "Risk of Rain 2",
-  "Stacking Type": "None",
-  "Unlock Type": "None",
-  "Modifier Type": "Ahoy"
  },
  {
   "Name": "Ukulele",
